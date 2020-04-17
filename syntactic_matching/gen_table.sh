@@ -4,6 +4,8 @@ echo "Optimization logs will be saved in paper_result directory"
 echo " "
 echo "  Name      Old Depth     Lobster (Syntactic Matching)        "
 echo "                           New Depth      Opt Time(s)"
+ ./main.native paper_bench/cardio.eqn paper_cases/leave-cardio > paper_result/cardio
+ ./main.native paper_bench/dsort.eqn paper_cases/leave-dsort > paper_result/dsort
  ./main.native paper_bench/hd01.eqn paper_cases/leave-hd01 > paper_result/hd01
  ./main.native paper_bench/hd02.eqn paper_cases/leave-hd02 > paper_result/hd02
  ./main.native paper_bench/hd03.eqn paper_cases/leave-hd03 > paper_result/hd03
@@ -16,8 +18,6 @@ echo "                           New Depth      Opt Time(s)"
  ./main.native paper_bench/hd10.eqn paper_cases/leave-hd10 > paper_result/hd10
  ./main.native paper_bench/hd11.eqn paper_cases/leave-hd11 > paper_result/hd11
  ./main.native paper_bench/hd12.eqn paper_cases/leave-hd12 > paper_result/hd12
- ./main.native paper_bench/cardio.eqn paper_cases/leave-cardio > paper_result/cardio
- ./main.native paper_bench/dsort.eqn paper_cases/leave-dsort > paper_result/dsort
  ./main.native paper_bench/bar.eqn paper_cases/leave-bar > paper_result/bar
  ./main.native paper_bench/cavlc.eqn paper_cases/leave-cavlc > paper_result/cavlc
  ./main.native paper_bench/ctrl.eqn paper_cases/leave-ctrl > paper_result/ctrl

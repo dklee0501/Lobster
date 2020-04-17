@@ -51,22 +51,6 @@ echo -n "                  -"
 ./he_base paper_bench/hd12.eqn_opted_result_baseline 15 > paper_result/hd12_opted_result_baseline
 ./he_base paper_bench/hd12.eqn_opted_result 15 > paper_result/hd12_opted_result
 
-./he_base paper_bench/msort.eqn 45 > paper_result/msort
-./he_base paper_bench/msort.eqn_opted_result_baseline 41 > paper_result/msort_opted_result_baseline
-./he_base paper_bench/msort.eqn_opted_result 36 > paper_result/msort_opted_result
-
-./he_base paper_bench/isort.eqn 45 > paper_result/isort
-echo -n "                  -"
-./he_base paper_bench/isort.eqn_opted_result 36 > paper_result/isort_opted_result
-
-./he_base paper_bench/bsort.eqn 45 > paper_result/bsort
-./he_base paper_bench/bsort.eqn_opted_result_baseline 41 > paper_result/bsort_opted_result_baseline
-./he_base paper_bench/bsort.eqn_opted_result 36 > paper_result/bsort_opted_result
-
-./he_base paper_bench/osort.eqn 25 > paper_result/osort
-echo -n "                  -"
-./he_base paper_bench/osort.eqn_opted_result 20 > paper_result/osort_opted_result
-
 ./he_base paper_bench/bar.eqn 12 > paper_result/bar
 echo -n "                  -"
 ./he_base paper_bench/bar.eqn_opted_result 11 > paper_result/bar_opted_result
@@ -92,6 +76,22 @@ echo "dec.eqn              -                  -               -"
 ./he_base paper_bench/router.eqn 19 > paper_result/router
 ./he_base paper_bench/router.eqn_opted_result_baseline 10 > paper_result/router_opted_result_baseline
 ./he_base paper_bench/router.eqn_opted_result 10 > paper_result/router_opted_result
+
+./he_base paper_bench/msort.eqn 45 > paper_result/msort
+./he_base paper_bench/msort.eqn_opted_result_baseline 41 > paper_result/msort_opted_result_baseline
+./he_base paper_bench/msort.eqn_opted_result 36 > paper_result/msort_opted_result
+
+./he_base paper_bench/isort.eqn 45 > paper_result/isort
+echo -n "                  -"
+./he_base paper_bench/isort.eqn_opted_result 36 > paper_result/isort_opted_result
+
+./he_base paper_bench/bsort.eqn 45 > paper_result/bsort
+./he_base paper_bench/bsort.eqn_opted_result_baseline 41 > paper_result/bsort_opted_result_baseline
+./he_base paper_bench/bsort.eqn_opted_result 36 > paper_result/bsort_opted_result
+
+./he_base paper_bench/osort.eqn 25 > paper_result/osort
+echo -n "                  -"
+./he_base paper_bench/osort.eqn_opted_result 20 > paper_result/osort_opted_result
 
 
 
