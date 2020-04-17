@@ -1,0 +1,10 @@
+(declare-const n264 Bool)
+(declare-const n4227 Bool)
+(declare-const n4225 Bool)
+(declare-const n4230 Bool)
+(declare-const n4232 Bool)
+(define-fun is_equal () Bool
+	(= (and n264 (not (and (and n4225 n4227) (and n4230 n4232)))) (xor (and (and (and n4227 n264) n4232) (and n4230 n4225)) n264))
+)
+(assert (not is_equal))
+(check-sat)

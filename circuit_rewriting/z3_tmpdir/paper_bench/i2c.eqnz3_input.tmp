@@ -1,0 +1,9 @@
+(declare-const n825 Bool)
+(declare-const n1025 Bool)
+(declare-const n1018 Bool)
+(declare-const n820 Bool)
+(define-fun is_equal () Bool
+	(= (and n825 (and n1025 (and n1018 n820))) (and (and (and n825 n820) n1018) n1025))
+)
+(assert (not is_equal))
+(check-sat)

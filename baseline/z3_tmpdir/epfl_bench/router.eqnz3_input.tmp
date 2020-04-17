@@ -1,0 +1,9 @@
+(declare-const new_n99_ Bool)
+(declare-const dest_x[9] Bool)
+(declare-const dest_x[11] Bool)
+(declare-const new_n97_ Bool)
+(define-fun is_equal () Bool
+	(= (and (not (and dest_x[11] (not (and (not dest_x[9]) new_n99_)))) new_n97_) (xor (and (or (not new_n99_) dest_x[9]) (and dest_x[11] new_n97_)) new_n97_))
+)
+(assert (not is_equal))
+(check-sat)

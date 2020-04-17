@@ -1,0 +1,8 @@
+(declare-const n369 Bool)
+(declare-const n363 Bool)
+(declare-const tmp890 Bool)
+(define-fun is_equal () Bool
+	(= (and (and n363 n369) tmp890) (and (and n363 tmp890) n369))
+)
+(assert (not is_equal))
+(check-sat)

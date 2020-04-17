@@ -1,0 +1,8 @@
+(declare-const n37 Bool)
+(declare-const B9 Bool)
+(declare-const n27 Bool)
+(define-fun is_equal () Bool
+	(= (and (not (and B9 n37)) (not (and (not B9) n27))) (xor (not (and (xor n37 n27) B9)) n27))
+)
+(assert (not is_equal))
+(check-sat)

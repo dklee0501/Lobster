@@ -1,0 +1,492 @@
+cir to graph finished
+old graph depth
+---graph depth print---
+var : m_0 depth : 0
+var : m_1 depth : 0
+var : m_2 depth : 0
+var : m_3 depth : 0
+var : m_4 depth : 0
+var : m_5 depth : 0
+var : m_6 depth : 0
+var : m_7 depth : 0
+var : m_8 depth : 0
+var : m_9 depth : 0
+var : m_10 depth : 0
+var : m_11 depth : 0
+var : m_12 depth : 0
+var : m_13 depth : 0
+var : m_14 depth : 0
+var : m_15 depth : 0
+var : m_16 depth : 0
+var : m_17 depth : 0
+var : m_18 depth : 0
+var : m_19 depth : 0
+var : m_20 depth : 0
+var : m_21 depth : 0
+var : m_22 depth : 0
+var : m_23 depth : 0
+var : m_24 depth : 0
+var : m_25 depth : 0
+var : m_26 depth : 16
+var : m_27 depth : 4
+var : m_28 depth : 8
+var : m_29 depth : 13
+var : m_30 depth : 15
+var : m_31 depth : 16
+---------------------
+============================================= graph opt start ===================================================
+initial graph size : 232
+initial mult size : 116
+whole case num : 7
+reduced case num : 7
+max case size : 17
+min case size : 5
+average case size : 11
+median case size : 11
+(and (and x y) z) --> (and x (and y z))
+(and (xor (and x y1) y2) z) --> (xor (and (and z y1) x) (and y2 z))
+(and (xor (xor (and x y1) y2) y3) z) --> (xor (and (and z y1) x) (and (xor y2 y3) z))
+(and (xor (xor (xor (and x y1) y2) y3) y4) z) --> (xor (and (and z y1) x) (and (xor (xor y2 y3) y4) z))
+(and (xor (xor (xor (xor (and x y1) y2) y3) y4) y5) z) --> (xor (and (and z y1) x) (and (xor (xor (xor y2 y3) y4) y5) z))
+(and (xor (xor (xor (xor (xor (and x y1) y2) y3) y4) y5) y6) z) --> (xor (and (and z y1) x) (and (xor (xor (xor (xor y2 y3) y4) y5) y6) z))
+(and (xor (xor (xor (xor (xor (xor (and x y1) y2) y3) y4) y5) y6) y7) z) --> (xor (and (and z y1) x) (and (xor (xor (xor (xor (xor y2 y3) y4) y5) y6) y7) z))
+
+
+graph_opt called
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 232
+selected cripath : 
+m_31 n320 m_30 n266 n255 n254 n253 m_29 n243 n242 n241 n230 n229 n228 n217 n216 n215 m_28 n194 n193 n176 n173 n172 n171 n166 n165 n164 n151 n149 n133 n117 n110 n109 n101 n98 n97 n93 n92 
+
+unsat
+pattern matched!
+tgt, new_tgt same? : true
+----print_subst start----
+tmpvar#2  -->  CVar_n226
+tmpvar#1  -->  CVar_n241
+tmpvar#3  -->  true
+tmpvar#0  -->  CVar_n245
+tmpvar#4  -->  CVar_n252
+---------------------
+
+old bexp : (and (xor (xor (and y1 x) y2) y3) z)
+new bexp : (xor (and (and z y1) x) (and (xor y2 y3) z))
+tgt bexp     : (and (xor (xor (and n226 n241) true) n245) n252)
+sub old bexp : (and (xor (xor (and n226 n241) true) n245) n252)
+sub new bexp : (xor (and (and n252 n226) n241) (and (xor true n245) n252))
+before depth : 14
+after depth : 13
+graph replaced
+
+
+unsat
+pattern matched!
+tgt, new_tgt same? : true
+----print_subst start----
+tmpvar#0  -->  CVar_n226
+tmpvar#1  -->  CVar_n230
+tmpvar#2  -->  CVar_n240
+---------------------
+
+old bexp : (and z (and x y))
+new bexp : (and x (and y z))
+tgt bexp     : (and n226 (and n230 n240))
+sub old bexp : (and n226 (and n230 n240))
+sub new bexp : (and n230 (and n240 n226))
+before depth : 13
+after depth : 12
+graph replaced
+
+
+graph size : 232
+graph mult size : 116
+and gate cost : 1275
+total cost : 147900
+graph size : 237
+graph mult size : 119
+and gate cost : 1073
+total cost : 127687
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 237
+selected cripath : 
+n125 n127 n131 n132 n133 n149 n183 n185 n186 n191 n192 n193 n194 m_28 n202 n211 n216 n217 n228 n229 n230 n241 tmp134 n253 n254 n255 n266 m_30 n268 n306 m_26 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 237
+selected cripath : 
+n92 n93 n97 n98 n101 n109 n110 n117 n133 n149 n150 n153 n177 n182 n192 n193 n194 m_28 n202 n211 n216 n217 n228 n229 n230 n241 tmp134 n253 n254 n255 n266 m_30 n268 n306 m_26 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 237
+selected cripath : 
+n129 n130 n131 n132 n133 n149 n151 n184 n185 n186 n191 n192 n193 n194 m_28 n202 n211 n216 n217 n225 n226 tmp138 n242 n243 m_29 n264 n265 n266 m_30 n320 m_31 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 237
+selected cripath : 
+m_26 n306 n268 m_30 n266 n255 n254 n253 tmp134 n241 n230 n229 n228 n217 n216 n211 n202 m_28 n194 n193 n192 n182 n177 n153 n150 n149 n133 n117 n110 n109 n101 n98 n97 n93 n92 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 237
+selected cripath : 
+m_31 n320 m_30 n266 n265 n264 m_29 n243 n242 tmp138 n240 n239 n238 n203 n202 m_28 n194 n193 n176 n173 n172 n162 n161 n157 n156 n154 n149 n133 n132 n124 n120 n119 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 237
+selected cripath : 
+m_26 n307 m_30 n266 n265 n264 m_29 n243 n242 tmp138 n226 n225 n224 n219 n218 n202 m_28 n194 n193 n176 n173 n172 n171 n170 n169 n167 n149 n133 n117 n110 n109 n101 n98 n97 n96 n95 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 237
+selected cripath : 
+n129 n130 n131 n132 n133 n149 n151 n164 n165 n166 n171 n172 n173 n176 n193 n194 m_28 n202 n211 n216 n217 n228 n229 n230 n242 n243 m_29 n264 n265 n266 m_30 n320 m_31 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 237
+selected cripath : 
+n118 n120 n124 n132 n133 n149 n151 n152 n153 n177 n182 n192 n193 n194 m_28 n202 n218 n219 n224 n227 n228 n229 n230 n242 n243 m_29 n256 n257 n265 n266 m_30 n268 n306 m_26 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 237
+selected cripath : 
+n95 n96 n97 n98 n101 n109 n110 n117 n133 n149 n151 n155 n156 n157 n161 n162 n172 n173 n176 n193 n194 m_28 n202 n231 n236 n237 n240 tmp138 n242 n243 m_29 n256 n257 n265 n266 m_30 n268 n306 m_26 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 237
+selected cripath : 
+n105 n107 n108 n109 n110 n117 n133 n149 n167 n169 n170 n171 n172 n173 n176 n193 n194 m_28 n208 n238 n239 n240 tmp138 n242 n243 m_29 n264 n265 n266 m_30 n307 m_26 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 237
+selected cripath : 
+m_26 n307 m_30 n266 n265 n264 m_29 n243 n242 n230 n229 n228 n217 n216 n215 m_28 n194 n193 n192 n191 n186 n185 n184 n151 n149 n133 n117 n110 n109 n108 n107 n105 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 237
+selected cripath : 
+n122 n123 n124 n132 n133 n149 n178 n180 n181 n182 n192 n193 n194 m_28 n208 n238 n239 n240 tmp138 n242 n243 m_29 n264 n265 n266 m_30 n268 n306 m_26 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 237
+selected cripath : 
+n105 n107 n108 n109 n110 n117 n133 n149 n158 n160 n161 n162 n172 n173 n176 n193 n194 m_28 n202 n211 n216 n217 n228 n229 n230 n242 n243 m_29 n256 n257 n265 n266 m_30 n320 m_31 
+
+graph opt finished
+INORDER = i_9 i_8 i_7 i_6 i_5 i_4 i_33 i_32 i_31 i_30 i_3 i_29 i_28 i_27 i_26 i_25 i_24 i_23 i_22 i_21 i_20 i_2 i_19 i_18 i_17 i_16 i_15 i_14 i_13 i_12 i_11 i_10;
+OUTORDER = m_9 m_8 m_7 m_6 m_5 m_4 m_31 m_30 m_3 m_29 m_28 m_27 m_26 m_25 m_24 m_23 m_22 m_21 m_20 m_2 m_19 m_18 m_17 m_16 m_15 m_14 m_13 m_12 m_11 m_10 m_1 m_0;
+m_0 = false;
+m_1 = false;
+m_10 = false;
+m_11 = false;
+m_12 = false;
+m_13 = false;
+m_14 = false;
+m_15 = false;
+m_16 = false;
+m_17 = false;
+m_18 = false;
+m_19 = false;
+m_2 = false;
+m_20 = false;
+m_21 = false;
+m_22 = false;
+m_23 = false;
+m_24 = false;
+m_25 = false;
+m_3 = false;
+m_4 = false;
+m_5 = false;
+m_6 = false;
+m_7 = false;
+m_8 = false;
+m_9 = false;
+n102 = (!i_10 * true) + (i_10 * !true);
+n103 = (!i_11 * true) + (i_11 * !true);
+n105 = (!i_12 * true) + (i_12 * !true);
+n106 = (!i_13 * true) + (i_13 * !true);
+n111 = (i_13 * n105);
+n112 = (!i_12 * n111) + (i_12 * !n111);
+n114 = (i_11 * n102);
+n118 = (!i_2 * true) + (i_2 * !true);
+n119 = (!i_3 * true) + (i_3 * !true);
+n121 = (!i_4 * true) + (i_4 * !true);
+n122 = (!i_5 * true) + (i_5 * !true);
+n125 = (!i_6 * true) + (i_6 * !true);
+n126 = (!i_7 * true) + (i_7 * !true);
+n128 = (!i_8 * true) + (i_8 * !true);
+n129 = (!i_9 * true) + (i_9 * !true);
+n134 = (i_9 * n128);
+n135 = (!i_8 * n134) + (i_8 * !n134);
+n138 = (i_7 * n125);
+n142 = (i_5 * n121);
+n143 = (!i_4 * n142) + (i_4 * !n142);
+n145 = (i_3 * n118);
+n146 = (!i_2 * n145) + (i_2 * !n145);
+n269 = (!i_26 * true) + (i_26 * !true);
+n270 = (!i_27 * true) + (i_27 * !true);
+n272 = (!i_28 * true) + (i_28 * !true);
+n273 = (!i_29 * true) + (i_29 * !true);
+n276 = (!i_22 * true) + (i_22 * !true);
+n277 = (!i_23 * true) + (i_23 * !true);
+n279 = (!i_24 * true) + (i_24 * !true);
+n280 = (!i_25 * true) + (i_25 * !true);
+n284 = (!i_30 * true) + (i_30 * !true);
+n285 = (!i_31 * true) + (i_31 * !true);
+n287 = (!i_32 * true) + (i_32 * !true);
+n288 = (!i_33 * true) + (i_33 * !true);
+n293 = (!i_18 * true) + (i_18 * !true);
+n294 = (!i_19 * true) + (i_19 * !true);
+n296 = (!i_20 * true) + (i_20 * !true);
+n297 = (!i_21 * true) + (i_21 * !true);
+n300 = (!i_17 * true) + (i_17 * !true);
+n91 = (!i_16 * true) + (i_16 * !true);
+n92 = (i_17 * n91);
+n93 = (!i_16 * n92) + (i_16 * !n92);
+n94 = (!i_14 * true) + (i_14 * !true);
+n95 = (!i_15 * true) + (i_15 * !true);
+n99 = (i_15 * n94);
+n100 = (!n94 * n99) + (n94 * !n99);
+n104 = (n102 * n103);
+n107 = (n105 * n106);
+n113 = (n104 * n112);
+n115 = (!n102 * n114) + (n102 * !n114);
+n120 = (n118 * n119);
+n123 = (n121 * n122);
+n127 = (n125 * n126);
+n130 = (n128 * n129);
+n136 = (n127 * n135);
+n139 = (!n125 * n138) + (n125 * !n138);
+n144 = (n120 * n143);
+n147 = (!n144 * n146) + (n144 * !n146);
+n271 = (n269 * n270);
+n274 = (n272 * n273);
+n278 = (n276 * n277);
+n281 = (n279 * n280);
+n286 = (n284 * n285);
+n289 = (n287 * n288);
+n295 = (n293 * n294);
+n298 = (n296 * n297);
+n301 = (n300 * n91);
+n96 = (n94 * n95);
+n97 = (n93 * n96);
+n108 = (n104 * n107);
+n116 = (!n113 * n115) + (n113 * !n115);
+n124 = (n120 * n123);
+n131 = (n127 * n130);
+n137 = (!n136 * true) + (n136 * !true);
+n140 = (!n137 * n139) + (n137 * !n139);
+n275 = (n271 * n274);
+n282 = (n278 * n281);
+n290 = (n286 * n289);
+n299 = (n295 * n298);
+n302 = (n301 * n96);
+n98 = (!n97 * true) + (n97 * !true);
+n101 = (!n100 * n98) + (n100 * !n98);
+n109 = (n101 * n108);
+n132 = (n124 * n131);
+n141 = (n124 * n140);
+n148 = (!n141 * n147) + (n141 * !n147);
+n283 = (n275 * n282);
+n291 = (n108 * n290);
+n303 = (n299 * n302);
+n110 = (!n109 * true) + (n109 * !true);
+n117 = (!n110 * n116) + (n110 * !n116);
+n133 = (n117 * n132);
+n149 = (!n133 * n148) + (n133 * !n148);
+n292 = (n283 * n291);
+n304 = (n132 * n303);
+n150 = (i_2 * n149);
+n151 = (!n149 * true) + (n149 * !true);
+n154 = (i_8 * n149);
+n158 = (i_9 * n149);
+n163 = (i_7 * n149);
+n167 = (i_6 * n149);
+n178 = (i_3 * n149);
+n183 = (i_5 * n149);
+n187 = (i_4 * n149);
+n205 = (i_10 * n149);
+n212 = (i_12 * n149);
+n220 = (i_13 * n149);
+n232 = (i_11 * n149);
+n248 = (i_14 * n149);
+n259 = (i_15 * n149);
+n305 = (n292 * n304);
+n309 = (!n133 * true) + (n133 * !true);
+n313 = (i_16 * n149);
+m_27 = (!n148 * n309) + (n148 * !n309);
+n152 = (i_18 * n151);
+n153 = (!n150 * n152) + (n150 * !n152);
+n155 = (i_24 * n151);
+n156 = (!n154 * n155) + (n154 * !n155);
+n159 = (i_25 * n151);
+n160 = (!n158 * n159) + (n158 * !n159);
+n164 = (i_23 * n151);
+n165 = (!n163 * n164) + (n163 * !n164);
+n168 = (i_22 * n151);
+n169 = (!n167 * n168) + (n167 * !n168);
+n179 = (i_19 * n151);
+n180 = (!n178 * n179) + (n178 * !n179);
+n184 = (i_21 * n151);
+n185 = (!n183 * n184) + (n183 * !n184);
+n188 = (i_20 * n151);
+n189 = (!n187 * n188) + (n187 * !n188);
+n206 = (i_26 * n151);
+n207 = (!n205 * n206) + (n205 * !n206);
+n213 = (i_28 * n151);
+n214 = (!n212 * n213) + (n212 * !n213);
+n221 = (i_29 * n151);
+n222 = (!n220 * n221) + (n220 * !n221);
+n233 = (i_27 * n151);
+n234 = (!n232 * n233) + (n232 * !n233);
+n249 = (i_30 * n151);
+n250 = (!n248 * n249) + (n248 * !n249);
+n260 = (i_31 * n151);
+n261 = (!n259 * n260) + (n259 * !n260);
+n314 = (i_32 * n151);
+n315 = (!n313 * n314) + (n313 * !n314);
+n157 = (!n156 * true) + (n156 * !true);
+n161 = (n157 * n160);
+n162 = (!n156 * n161) + (n156 * !n161);
+n166 = (!n165 * true) + (n165 * !true);
+n170 = (!n169 * true) + (n169 * !true);
+n174 = (n165 * n170);
+n177 = (!n153 * true) + (n153 * !true);
+n181 = (!n180 * true) + (n180 * !true);
+n186 = (!n185 * true) + (n185 * !true);
+n190 = (!n189 * true) + (n189 * !true);
+n195 = (n185 * n190);
+n196 = (!n189 * n195) + (n189 * !n195);
+n198 = (n177 * n180);
+n199 = (!n153 * n198) + (n153 * !n198);
+n171 = (n166 * n170);
+n172 = (n162 * n171);
+n175 = (!n170 * n174) + (n170 * !n174);
+n182 = (n177 * n181);
+n191 = (n186 * n190);
+n197 = (n182 * n196);
+n200 = (!n197 * n199) + (n197 * !n199);
+n173 = (!n172 * true) + (n172 * !true);
+n176 = (!n173 * n175) + (n173 * !n175);
+n192 = (n182 * n191);
+n193 = (n176 * n192);
+n194 = (!n193 * true) + (n193 * !true);
+m_28 = (!n194 * n200) + (n194 * !n200);
+n208 = (m_28 * n207);
+n215 = (m_28 * n214);
+n223 = (m_28 * n222);
+n235 = (m_28 * n234);
+n251 = (m_28 * n250);
+n262 = (m_28 * n261);
+n316 = (m_28 * n315);
+n202 = (!m_28 * true) + (m_28 * !true);
+n203 = (n153 * n202);
+n211 = (n189 * n202);
+n216 = (!n211 * n215) + (n211 * !n215);
+n218 = (n185 * n202);
+n231 = (n180 * n202);
+n236 = (!n231 * n235) + (n231 * !n235);
+n238 = (!n203 * n208) + (n203 * !n208);
+n247 = (n169 * n202);
+n252 = (!n247 * n251) + (n247 * !n251);
+n258 = (n165 * n202);
+n263 = (!n258 * n262) + (n258 * !n262);
+n311 = (!n211 * n215) + (n211 * !n215);
+n312 = (n156 * n202);
+n317 = (!n312 * n316) + (n312 * !n316);
+n204 = (!n203 * true) + (n203 * !true);
+n209 = (!n204 * n208) + (n204 * !n208);
+n217 = (!n216 * true) + (n216 * !true);
+n219 = (!n218 * true) + (n218 * !true);
+n224 = (!n219 * n223) + (n219 * !n223);
+n237 = (!n236 * true) + (n236 * !true);
+n239 = (!n238 * true) + (n238 * !true);
+n244 = (n236 * n239);
+n245 = (!n238 * n244) + (n238 * !n244);
+n210 = (!n209 * true) + (n209 * !true);
+n225 = (n217 * n224);
+n227 = (!n224 * true) + (n224 * !true);
+n228 = (n217 * n227);
+n229 = (n216 * n228);
+n240 = (n237 * n239);
+tmp137 = (!n245 * true) + (n245 * !true);
+n226 = (!n225 * true) + (n225 * !true);
+n230 = (!n229 * true) + (n229 * !true);
+n241 = (n230 * n240);
+tmp135 = (n226 * n252);
+tmp136 = (n252 * tmp137);
+tmp138 = (n226 * n240);
+n242 = (n230 * tmp138);
+tmp134 = (n241 * tmp135);
+n243 = (!n242 * true) + (n242 * !true);
+n253 = (!tmp134 * tmp136) + (tmp134 * !tmp136);
+n254 = (!n210 * n253) + (n210 * !n253);
+n310 = (!n209 * n253) + (n209 * !n253);
+m_29 = (!n243 * n245) + (n243 * !n245);
+n255 = (!n254 * true) + (n254 * !true);
+n264 = (m_29 * n263);
+n318 = (m_29 * n317);
+n319 = (!n311 * n318) + (n311 * !n318);
+n256 = (!m_29 * true) + (m_29 * !true);
+n257 = (n236 * n256);
+n265 = (!n257 * n264) + (n257 * !n264);
+n266 = (n255 * n265);
+m_30 = (!n255 * n266) + (n255 * !n266);
+n320 = (m_30 * n319);
+m_31 = (!n310 * n320) + (n310 * !n320);
+n268 = (!m_30 * true) + (m_30 * !true);
+n307 = (m_30 * n305);
+n306 = (n268 * n305);
+m_26 = (!n306 * n307) + (n306 * !n307);
+
+
+new graph depth
+---graph depth print---
+var : m_0 depth : 0
+var : m_1 depth : 0
+var : m_2 depth : 0
+var : m_3 depth : 0
+var : m_4 depth : 0
+var : m_5 depth : 0
+var : m_6 depth : 0
+var : m_7 depth : 0
+var : m_8 depth : 0
+var : m_9 depth : 0
+var : m_10 depth : 0
+var : m_11 depth : 0
+var : m_12 depth : 0
+var : m_13 depth : 0
+var : m_14 depth : 0
+var : m_15 depth : 0
+var : m_16 depth : 0
+var : m_17 depth : 0
+var : m_18 depth : 0
+var : m_19 depth : 0
+var : m_20 depth : 0
+var : m_21 depth : 0
+var : m_22 depth : 0
+var : m_23 depth : 0
+var : m_24 depth : 0
+var : m_25 depth : 0
+var : m_26 depth : 15
+var : m_27 depth : 4
+var : m_28 depth : 8
+var : m_29 depth : 12
+var : m_30 depth : 14
+var : m_31 depth : 15
+---------------------
+old mult depth : 16
+new mult depth : 15

@@ -1,0 +1,9 @@
+(declare-const n22 Bool)
+(declare-const tmp1459 Bool)
+(declare-const n829 Bool)
+(declare-const tmp1458 Bool)
+(define-fun is_equal () Bool
+	(= (and n22 (xor (xor (and n829 tmp1458) tmp1459) true)) (xor (and (and n22 tmp1458) n829) (and (xor tmp1459 true) n22)))
+)
+(assert (not is_equal))
+(check-sat)

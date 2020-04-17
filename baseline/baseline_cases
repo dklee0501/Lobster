@@ -1,0 +1,41 @@
+opt target : r (d3)
+Input list : x(d1) y(d0) z(d0)
+old bexp : ((x and y) and z) 
+new bexp : (x and (y and z))
+
+opt target : r (d3)
+Input list : x(d1) y1(d0) y2(d0) z(d0)
+old bexp : (((x and y1) xor y2) and z)
+new bexp : (((z and y1) and x) xor (y2 and z))
+
+
+opt target : r (d3)
+Input list : x(d1) y1(d0) y2(d0) y3(d0) z(d0)
+old bexp : ((((x and y1) xor y2) xor y3) and z)
+new bexp : (((z and y1) and x) xor ((y2 xor y3) and z))
+
+
+opt target : r (d3)
+Input list : x(d1) z(d0) y1(d0) y2(d0) y3(d0) y4(d0)
+old bexp : (((((x and y1) xor y2) xor y3) xor y4) and z)
+new bexp : (((z and y1) and x) xor (((y2 xor y3) xor y4) and z))
+
+
+opt target : r (d3)
+Input list : x(d1) z(d0) y1(d0) y2(d0) y3(d0) y4(d0) y5(d0)
+old bexp : ((((((x and y1) xor y2) xor y3) xor y4) xor y5) and z)
+new bexp : (((z and y1) and x) xor ((((y2 xor y3) xor y4) xor y5) and z))
+
+
+opt target : r (d3)
+Input list : x(d1) z(d0) y1(d0) y2(d0) y3(d0) y4(d0) y5(d0) y6(d0)
+old bexp : (((((((x and y1) xor y2) xor y3) xor y4) xor y5) xor y6) and z)
+new bexp : (((z and y1) and x) xor (((((y2 xor y3) xor y4) xor y5) xor y6) and z))
+
+
+opt target : r (d3)
+Input list : x(d1) z(d0) y1(d0) y2(d0) y3(d0) y4(d0) y5(d0) y6(d0) y7(d0)
+old bexp : ((((((((x and y1) xor y2) xor y3) xor y4) xor y5) xor y6) xor y7) and z)
+new bexp : (((z and y1) and x) xor ((((((y2 xor y3) xor y4) xor y5) xor y6) xor y7) and z))
+
+

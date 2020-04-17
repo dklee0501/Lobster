@@ -1,0 +1,10 @@
+(declare-const tmp827 Bool)
+(declare-const n234 Bool)
+(declare-const desty17 Bool)
+(declare-const tmp817 Bool)
+(declare-const n273 Bool)
+(define-fun is_equal () Bool
+	(= (and (xor tmp817 (xor desty17 (and n234 tmp827))) n273) (xor (and (xor desty17 tmp817) n273) (and (and n273 tmp827) n234)))
+)
+(assert (not is_equal))
+(check-sat)

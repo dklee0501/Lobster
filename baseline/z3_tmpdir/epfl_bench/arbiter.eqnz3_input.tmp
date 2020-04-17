@@ -1,0 +1,9 @@
+(declare-const new_n1295_ Bool)
+(declare-const new_n1288_ Bool)
+(declare-const new_n21749_ Bool)
+(declare-const tmp13182 Bool)
+(define-fun is_equal () Bool
+	(= (and new_n1295_ (not (xor new_n1288_ (and new_n21749_ tmp13182)))) (xor (and (and tmp13182 new_n1295_) new_n21749_) (and (not new_n1288_) new_n1295_)))
+)
+(assert (not is_equal))
+(check-sat)

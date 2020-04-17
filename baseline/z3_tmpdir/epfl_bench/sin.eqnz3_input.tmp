@@ -1,0 +1,8 @@
+(declare-const new_n5368_ Bool)
+(declare-const new_n5367_ Bool)
+(declare-const new_n5369_ Bool)
+(define-fun is_equal () Bool
+	(= (and new_n5368_ (and new_n5367_ new_n5369_)) (and new_n5367_ (and new_n5368_ new_n5369_)))
+)
+(assert (not is_equal))
+(check-sat)

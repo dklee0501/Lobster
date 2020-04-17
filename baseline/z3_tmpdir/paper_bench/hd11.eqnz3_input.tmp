@@ -1,0 +1,9 @@
+(declare-const n718 Bool)
+(declare-const n729 Bool)
+(declare-const n723 Bool)
+(declare-const tmp15 Bool)
+(define-fun is_equal () Bool
+	(= (and (not (and n718 (not (and (not n723) n729)))) (not (and (and (not n723) n729) tmp15))) (xor (or (not (and (xor n718 tmp15) n729)) n723) n718))
+)
+(assert (not is_equal))
+(check-sat)

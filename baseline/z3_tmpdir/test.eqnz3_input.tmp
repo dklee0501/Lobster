@@ -1,0 +1,8 @@
+(declare-const n4 Bool)
+(declare-const n2 Bool)
+(declare-const n3 Bool)
+(define-fun is_equal () Bool
+	(= (and n4 (and n2 n3)) (and n2 (and n4 n3)))
+)
+(assert (not is_equal))
+(check-sat)

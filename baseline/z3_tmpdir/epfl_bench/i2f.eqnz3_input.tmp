@@ -1,0 +1,9 @@
+(declare-const B[5] Bool)
+(declare-const new_n137_ Bool)
+(declare-const B[3] Bool)
+(declare-const new_n149_ Bool)
+(define-fun is_equal () Bool
+	(= (and B[5] (not (and (not (and B[3] (not new_n137_))) new_n149_))) (xor (and (or (not B[3]) new_n137_) (and new_n149_ B[5])) B[5]))
+)
+(assert (not is_equal))
+(check-sat)

@@ -1,0 +1,9 @@
+(declare-const n96 Bool)
+(declare-const opcode0 Bool)
+(declare-const opcode1 Bool)
+(declare-const n53 Bool)
+(define-fun is_equal () Bool
+	(= (and (not (and (and opcode0 opcode1) n96)) n53) (xor (and (and (and n53 opcode1) opcode0) n96) n53))
+)
+(assert (not is_equal))
+(check-sat)

@@ -1,0 +1,10 @@
+(declare-const tmp125 Bool)
+(declare-const new_n1851_ Bool)
+(declare-const new_n1871_ Bool)
+(declare-const tmp118 Bool)
+(declare-const tmp77 Bool)
+(define-fun is_equal () Bool
+	(= (and (not (xor tmp118 (xor new_n1871_ (and new_n1851_ tmp125)))) tmp77) (xor (and (xor (not new_n1871_) tmp118) tmp77) (and (and tmp77 tmp125) new_n1851_)))
+)
+(assert (not is_equal))
+(check-sat)

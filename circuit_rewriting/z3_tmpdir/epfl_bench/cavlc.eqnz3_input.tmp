@@ -1,0 +1,9 @@
+(declare-const n44 Bool)
+(declare-const ingones0 Bool)
+(declare-const ctable1 Bool)
+(declare-const ocoeffs0 Bool)
+(define-fun is_equal () Bool
+	(= (and n44 (and (and ctable1 ingones0) ocoeffs0)) (and (and ingones0 n44) (and ctable1 ocoeffs0)))
+)
+(assert (not is_equal))
+(check-sat)

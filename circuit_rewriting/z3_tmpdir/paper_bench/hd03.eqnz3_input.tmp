@@ -1,0 +1,9 @@
+(declare-const n57 Bool)
+(declare-const n41 Bool)
+(declare-const n53 Bool)
+(declare-const n70 Bool)
+(define-fun is_equal () Bool
+	(= (and (xor (and n41 n53) n57) n70) (xor (and (and n70 n53) n41) (and n70 n57)))
+)
+(assert (not is_equal))
+(check-sat)

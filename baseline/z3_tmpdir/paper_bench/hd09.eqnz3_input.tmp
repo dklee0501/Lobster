@@ -1,0 +1,8 @@
+(declare-const n65 Bool)
+(declare-const n157 Bool)
+(declare-const n98 Bool)
+(define-fun is_equal () Bool
+	(= (and n65 (and n157 n98)) (and n157 (and n65 n98)))
+)
+(assert (not is_equal))
+(check-sat)

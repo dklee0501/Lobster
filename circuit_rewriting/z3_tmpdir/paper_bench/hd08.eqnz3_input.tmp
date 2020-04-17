@@ -1,0 +1,8 @@
+(declare-const n24 Bool)
+(declare-const n28 Bool)
+(declare-const n44 Bool)
+(define-fun is_equal () Bool
+	(= (and n24 (and n28 n44)) (and n44 (and n24 n28)))
+)
+(assert (not is_equal))
+(check-sat)

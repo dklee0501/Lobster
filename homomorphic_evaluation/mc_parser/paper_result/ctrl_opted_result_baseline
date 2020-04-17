@@ -1,0 +1,36 @@
+selected m : 10261
+generated Key : 
+input : opcode0 : 0
+input : opcode1 : 0
+input : opcode2 : 0
+input : opcode3 : 1
+input : opcode4 : 0
+input : opext0 : 0
+input : opext1 : 0
+circuit evaluation finished
+output : oCin : 0
+output : oaluop0 : 0
+output : oaluop1 : 0
+output : oaluop2 : 1
+output : oaluopext0 : 0
+output : oaluopext1 : 0
+output : oaluopext2 : 0
+output : oaluopext3 : 1
+output : obeqz : 0
+output : obgez : 0
+output : obltz : 0
+output : obnez : 0
+output : ohalt : 0
+output : oinvA : 0
+output : oinvB : 0
+output : ojump : 0
+output : omemwrite : 0
+output : oregwrite : 1
+output : oselopB0 : 0
+output : oselopB1 : 1
+output : oseloregdst0 : 0
+output : oseloregdst1 : 0
+output : oselpcopA : 0
+output : oselpcopB : 0
+output : oselwb : 0
+output : osign : 1

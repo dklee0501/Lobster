@@ -1,0 +1,9 @@
+(declare-const A[3] Bool)
+(declare-const new_n982_ Bool)
+(declare-const A[4] Bool)
+(declare-const new_n988_ Bool)
+(define-fun is_equal () Bool
+	(= (and A[3] (not (and new_n982_ (not (and A[4] (not new_n988_)))))) (xor (and (or (not A[4]) new_n988_) (and new_n982_ A[3])) A[3]))
+)
+(assert (not is_equal))
+(check-sat)

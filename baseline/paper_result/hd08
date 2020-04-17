@@ -1,0 +1,184 @@
+cir to graph finished
+old graph depth
+---graph depth print---
+var : om_0 depth : 6
+---------------------
+============================================= graph opt start ===================================================
+initial graph size : 37
+initial mult size : 18
+whole case num : 7
+reduced case num : 7
+max case size : 17
+min case size : 5
+average case size : 11
+median case size : 11
+(and (and x y) z) --> (and x (and y z))
+(and (xor (and x y1) y2) z) --> (xor (and (and z y1) x) (and y2 z))
+(and (xor (xor (and x y1) y2) y3) z) --> (xor (and (and z y1) x) (and (xor y2 y3) z))
+(and (xor (xor (xor (and x y1) y2) y3) y4) z) --> (xor (and (and z y1) x) (and (xor (xor y2 y3) y4) z))
+(and (xor (xor (xor (xor (and x y1) y2) y3) y4) y5) z) --> (xor (and (and z y1) x) (and (xor (xor (xor y2 y3) y4) y5) z))
+(and (xor (xor (xor (xor (xor (and x y1) y2) y3) y4) y5) y6) z) --> (xor (and (and z y1) x) (and (xor (xor (xor (xor y2 y3) y4) y5) y6) z))
+(and (xor (xor (xor (xor (xor (xor (and x y1) y2) y3) y4) y5) y6) y7) z) --> (xor (and (and z y1) x) (and (xor (xor (xor (xor (xor y2 y3) y4) y5) y6) y7) z))
+
+
+graph_opt called
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 37
+selected cripath : 
+n35 n36 n37 n43 n44 n45 om_0 
+
+unsat
+pattern matched!
+tgt, new_tgt same? : true
+----print_subst start----
+tmpvar#0  -->  CVar_n24
+tmpvar#1  -->  CVar_n28
+tmpvar#2  -->  CVar_n44
+---------------------
+
+old bexp : (and z (and y x))
+new bexp : (and x (and y z))
+tgt bexp     : (and n24 (and n28 n44))
+sub old bexp : (and n24 (and n28 n44))
+sub new bexp : (and n44 (and n28 n24))
+before depth : 6
+after depth : 5
+graph replaced
+
+
+graph size : 37
+graph mult size : 18
+and gate cost : 253
+total cost : 4554
+graph size : 37
+graph mult size : 18
+and gate cost : 157
+total cost : 2826
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 37
+selected cripath : 
+om_0 tmp33 n28 n27 n25 n16 n15 n13 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 37
+selected cripath : 
+om_0 n44 n43 n37 n34 n33 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 37
+selected cripath : 
+om_0 n44 n43 n42 n39 n38 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 37
+selected cripath : 
+n35 n36 n37 n43 n44 om_0 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 37
+selected cripath : 
+n33 n34 n37 n43 n44 om_0 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 37
+selected cripath : 
+om_0 tmp33 n24 n20 n16 n15 n13 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 37
+selected cripath : 
+om_0 tmp33 n28 n27 n25 n16 n15 n14 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 37
+selected cripath : 
+om_0 tmp33 n28 n27 n25 n16 n15 n14 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 37
+selected cripath : 
+n35 n36 n37 n43 n44 om_0 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 37
+selected cripath : 
+om_0 tmp33 n24 n20 n16 n12 n10 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 37
+selected cripath : 
+om_0 tmp33 n28 n27 n25 n16 n12 n10 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 37
+selected cripath : 
+n14 n15 n16 n20 n24 tmp33 om_0 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 37
+selected cripath : 
+n13 n15 n16 n20 n24 tmp33 om_0 
+
+graph opt finished
+INORDER = i7 i6 i5 i4 i3 i2 i1 i0;
+OUTORDER = om_0;
+n10 = (!i0 * true) + (i0 * !true);
+n11 = (!i1 * true) + (i1 * !true);
+n13 = (!i2 * true) + (i2 * !true);
+n14 = (!i3 * true) + (i3 * !true);
+n17 = (!i4 * true) + (i4 * !true);
+n18 = (!i5 * true) + (i5 * !true);
+n21 = (!i6 * true) + (i6 * !true);
+n22 = (!i7 * true) + (i7 * !true);
+n33 = (i6 * i7);
+n34 = (!n33 * true) + (n33 * !true);
+n35 = (i4 * i5);
+n36 = (!n35 * true) + (n35 * !true);
+n38 = (i0 * i1);
+n39 = (!n38 * true) + (n38 * !true);
+n40 = (i2 * i3);
+n41 = (!n40 * true) + (n40 * !true);
+n12 = (n10 * n11);
+n15 = (n13 * n14);
+n19 = (n17 * n18);
+n23 = (n21 * n22);
+n37 = (n34 * n36);
+n42 = (n39 * n41);
+n16 = (n12 * n15);
+n20 = (n16 * n19);
+n24 = (!n20 * n23) + (n20 * !n23);
+n26 = (!n19 * true) + (n19 * !true);
+n29 = (!n12 * true) + (n12 * !true);
+n30 = (!n15 * true) + (n15 * !true);
+n43 = (n37 * n42);
+n25 = (!n16 * true) + (n16 * !true);
+n27 = (n25 * n26);
+n31 = (n29 * n30);
+n28 = (!n27 * true) + (n27 * !true);
+n32 = (!n31 * true) + (n31 * !true);
+n44 = (n32 * n43);
+tmp33 = (n24 * n28);
+n45 = (n28 * n44);
+om_0 = (n44 * tmp33);
+
+
+new graph depth
+---graph depth print---
+var : om_0 depth : 5
+---------------------
+old mult depth : 6
+new mult depth : 5

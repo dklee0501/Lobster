@@ -1,0 +1,496 @@
+cir to graph finished
+old graph depth
+---graph depth print---
+var : m_0 depth : 0
+var : m_1 depth : 0
+var : m_2 depth : 0
+var : m_3 depth : 0
+var : m_4 depth : 0
+var : m_5 depth : 0
+var : m_6 depth : 0
+var : m_7 depth : 0
+var : m_8 depth : 0
+var : m_9 depth : 0
+var : m_10 depth : 0
+var : m_11 depth : 0
+var : m_12 depth : 0
+var : m_13 depth : 0
+var : m_14 depth : 0
+var : m_15 depth : 0
+var : m_16 depth : 0
+var : m_17 depth : 0
+var : m_18 depth : 0
+var : m_19 depth : 0
+var : m_20 depth : 0
+var : m_21 depth : 0
+var : m_22 depth : 0
+var : m_23 depth : 0
+var : m_24 depth : 0
+var : m_25 depth : 0
+var : m_26 depth : 0
+var : m_27 depth : 0
+var : m_28 depth : 0
+var : m_29 depth : 5
+var : m_30 depth : 5
+var : m_31 depth : 6
+---------------------
+============================================= graph opt start ===================================================
+initial graph size : 73
+initial mult size : 35
+whole case num : 718
+reduced case num : 186
+max case size : 38
+min case size : 4
+average case size : 12
+median case size : 11
+(and (not false) norm2) --> norm2
+(and (and norm2 desty14) desty15) --> (and norm2 (and desty15 desty14))
+(and (not (and n231 n223)) desty14) --> (xor (and (and desty14 n223) n231) desty14)
+(not (and (and norm3 norm7) n379)) --> (not (and (and norm7 n379) norm3))
+(and (and (and n301 n297) n290) n284) --> (and (and n284 n297) (and n301 n290))
+(not (and (not (and n236 n222)) desty17)) --> (xor (not (and (and desty17 n222) n236)) desty17)
+(and (and n481 (and n462 n457)) n476) --> (and (and (and n476 n457) n481) n462)
+(and (and (and n440 n449) n1206) n444) --> (and (and (and n444 n440) n449) n1206)
+(and (and (and n325 norm3) n322) i_25) --> (and (and norm3 (and i_25 n322)) n325)
+(xor (and (and n554 n390) i_9) n618) --> (xor (and (and n390 i_9) n554) n618)
+(and (xor (and n107 i_13) n118) n117) --> (xor (and (and n117 i_13) n107) (and n117 n118))
+(and (not (and norm3 i_7)) (not i_4)) --> (xor (or (not norm3) (or (not i_7) i_4)) i_4)
+(and (not (and (and n459 n457) n734)) pi020) --> (xor (and (and (and pi020 n459) n457) n734) pi020)
+(and (and norm2 n893) (not (and n876 n824))) --> (and (xor (and (and n824 n893) n876) n893) norm2)
+(and (not (and n481 (and n462 n457))) pi082) --> (xor (and (and (and pi082 n457) n481) n462) pi082)
+(and (and n379 (not (xor n371 n373))) n376) --> (and (xor (not n371) n373) (and n376 n379))
+(and (and n441 (xor norm3 (not n218))) n225) --> (and (xor (not norm3) n218) (and n225 n441))
+(xor (and n107 (not (and n78 n63))) n125) --> (xor (xor (and (and n107 n63) n78) n125) n107)
+(and n261 (not (xor n215 (and n177 i_23)))) --> (xor (and (and i_23 n261) n177) (and (not n215) n261))
+(and n199 (not (xor (and n195 norm4) norm4))) --> (xor (and norm4 (and (not n195) n199)) n199)
+(and n101 (not (and (and n85 n78) n74))) --> (xor (and (and n74 n85) (and n78 n101)) n101)
+(and (and (not n94) (not norm4)) (not n63)) --> (not (or norm4 (or n63 n94)))
+(and (not (and n277 (and n271 n232))) i30) --> (xor (and (and (and i30 n277) n271) n232) i30)
+(and (not (and n104 (not (and n99 destx11)))) destx14) --> (or (and (and destx14 destx11) n99) (and (not n104) destx14))
+(and (and (not (and n104 (not norm5))) destx14) destx15) --> (and (or norm5 (not n104)) (and destx15 destx14))
+(and n261 (not (and (not (and n254 n220)) n219))) --> (and (xor (not (and (and n220 n219) n254)) n219) n261)
+(and (xor (and (and desty17 n222) n236) desty17) n273) --> (xor (and (and (and n273 n222) desty17) n236) (and n273 desty17))
+(and (and (and n731 n447) n445) (and n659 n440)) --> (and (and (and (and n447 n445) n440) n659) n731)
+(and (and (and n440 n459) n658) (and n457 n458)) --> (and (and (and n458 n459) n457) (and n440 n658))
+(and (and (and n461 n478) (and n457 n458)) n447) --> (and (and (and n447 n478) n458) (and n461 n457))
+(and (and (and n480 n478) (and n462 n457)) n477) --> (and (and (and n478 n457) n477) (and n480 n462))
+(and (and (and (and n437 n443) n440) n450) n436) --> (and (and (and (and n436 n437) n440) n443) n450)
+(and (and (and (not opcode4) opcode3) (not opcode1)) opcode0) --> (and (not (or opcode4 opcode1)) (and opcode0 opcode3))
+(xor (xor n610 n609) (and (and n547 n322) i_24)) --> (xor (xor (and (and i_24 n322) n547) n610) n609)
+(and (xor norm2 (and (not n313) (not n273))) norm2) --> norm2
+(and (not (xor i_15 (not i_7))) (and norm5 norm11)) --> (and (and norm11 (xor i_15 i_7)) norm5)
+(and (xor (xor n286 (and n269 n213)) n249) n193) --> (xor (and (xor n286 n249) n193) (and (and n193 n213) n269))
+(and (xor n333 (and (and n329 norm4) n317)) n151) --> (and (xor (and norm4 (and n329 n317)) n333) n151)
+(and (and n158 (and (not n148) (not n136))) n98) --> (and (not (or n148 n136)) (and n98 n158))
+(not (and (not (and n250 (and n205 n162))) n247)) --> (xor (not (and (and (and n247 n205) n250) n162)) n247)
+(and (and n230 n209) (and n193 (and n152 n117))) --> (and (and (and n152 n230) n117) (and n193 n209))
+(and (xor norm2 (and i37 i5)) (and norm7 norm12)) --> (and (and norm7 norm2) norm12)
+(xor (and (and n93 n92) (not (and n125 destx25))) n92) --> (xor (and (and (and n93 destx25) n92) n125) (and (not n93) n92))
+(and (xor (or (not (and n121 n116)) n114) n121) destx23) --> (xor (and (and (and destx23 n116) n121) (not n114)) (and (not n121) destx23))
+(and (not (and n121 (not (and n116 (not n114))))) destx23) --> (and (xor (or (not (and n121 n116)) n114) n121) destx23)
+(and (not (xor (and (and destx17 n95) norm5) destx17)) n94) --> (xor (and (and (and n94 n95) destx17) norm5) (and (not destx17) n94))
+(and (and (and n169 n149) n142) (not (and n108 destx16))) --> (and (xor (and (and destx16 n149) n108) n149) (and n169 n142))
+(xor (and (not (or n175 n153)) (and n19 n182)) n19) --> (xor (and (and (and n19 n182) (not n175)) (not n153)) n19)
+(and (not (and (and n182 (not n175)) (not n153))) n19) --> (xor (and (not (or n175 n153)) (and n19 n182)) n19)
+(and (not (and (not (and norm5 n468)) (not n1242))) n438) --> (or (and (and n438 n468) norm5) (and n438 n1242))
+(and (not (and (and (and n476 n457) n481) n462)) pi082) --> (xor (and (and (and pi082 n476) n457) (and n481 n462)) pi082)
+(and n1326 (not (xor (and (and pi082 n1285) n454) pi082))) --> (xor (and (and (and pi082 n1326) n1285) n454) (and (not pi082) n1326))
+(and (not (and (and (and n444 n440) n449) n1206)) pi082) --> (xor (and (and (and (and pi082 n444) n440) n449) n1206) pi082)
+(not (and (and (and (not norm5) n825) (not norm12)) n943)) --> (or (or (not (and n825 n943)) norm5) norm12)
+(not (xor (and (or norm4 pi039) (xor pi026 pi027)) pi027)) --> (xor (or (or (xor (not pi027) pi026) pi039) norm4) pi026)
+(and (not (and (and opcode3 (not opcode0)) opcode4)) (not opcode1)) --> (xor (or (not (and opcode3 opcode4)) (or opcode1 opcode0)) opcode1)
+(and (not (and (not ctable0) ocoeffs3)) (not (and ctable0 ocoeffs1))) --> (xor (not (and (xor ocoeffs1 ocoeffs3) ctable0)) ocoeffs3)
+(and (not (and (and (not n2287) (not n2285)) norm6)) n293) --> (xor (and (not (or n2285 n2287)) (and norm6 n293)) n293)
+(and (and (and n379 (not (xor n371 n373))) n376) i_10) --> (and (and (xor (not n373) n371) (and i_10 n376)) n379)
+(and (and (and n441 (xor norm4 (not n218))) n225) i_9) --> (and (and (xor (not norm4) n218) (and i_9 n225)) n441)
+(and (not (xor (xor n286 (and n269 n213)) n249)) n184) --> (xor (and (xor (not n286) n249) n184) (and (and n184 n213) n269))
+(and (not (and (not (and i_7 (not i_6))) norm6)) i_8) --> (xor (and (or (not i_7) i_6) (and norm6 i_8)) i_8)
+(and (not (and n199 norm3)) (not (and n187 (not norm3)))) --> (xor (or (xor (not n187) n199) norm3) n199)
+(and n218 (not (and (and n213 n212) (and n177 n85)))) --> (xor (and (and (and n212 n218) n85) (and n177 n213)) n218)
+(and (not (and (and n261 n255) (and n237 n232))) i28) --> (xor (and (and (and (and i28 n261) n237) n255) n232) i28)
+(xor (and (xor n325 (not (and n254 n207))) n210) i63) --> (xor (xor (and (and n210 n254) n207) (and (not n325) n210)) i63)
+(xor n198 (not (and n194 (and n174 (and n114 n87))))) --> (xor (not (and (and (and n114 n194) n87) n174)) n198)
+(and (and (and (and (and n306 n263) n272) n277) n268) n305) --> (and (and (and (and n306 n305) (and n277 n263)) n272) n268)
+(not (and (not norm3) (not (and (not (and n127 n93)) n92)))) --> (or (xor (and (and n93 n92) n127) n92) norm3)
+(and (and (and (and (and n306 n305) n277) n272) n268) n263) --> (and (and (and (and (and n306 n263) n272) n277) n268) n305)
+(not (and (xor (not (and (and n220 n219) n254)) n219) n261)) --> (xor (and (and (and n220 n261) n219) n254) (or (not n261) n219))
+(not (and (xor (not (and (and n243 n248) n242)) n248) n252)) --> (xor (and (and (and n243 n248) n252) n242) (or (not n252) n248))
+(and (and (and (and n306 n305) (and n277 n263)) n272) n268) --> (and (and (and (and n306 n277) n268) (and n263 n305)) n272)
+(not (and (not (and (and n68 (not n64)) (not norm7))) n20)) --> (xor (or (or (not (and n20 n68)) n64) norm7) n20)
+(not (and (xor (not (and (and n20 n285) n271)) n20) n296)) --> (xor (and (and (and n20 n296) n285) n271) (or (not n296) n20))
+(not (and (xor (or (not (and n37 n267)) n254) n267) n46)) --> (xor (or (not (and (and n46 n37) n267)) n254) (and (not n267) n46))
+(and (and (and (not pi044) (not pi042)) (not pi040)) (not pi038)) --> (not (or (or pi038 pi042) (or pi044 pi040)))
+(not (and (xor (or (not (and n821 n1032)) n1028) n821) n1041)) --> (xor (or (not (and (and n821 n1032) n1041)) n1028) (and (not n821) n1041))
+(not (and (xor (or (not (and n825 n1533)) n1529) n825) n1539)) --> (xor (or (not (and (and n825 n1539) n1533)) n1529) (and (not n825) n1539))
+(and (not (xor (not (and (or pi058 pi116) pi026)) pi058)) pi094) --> (and (and (xor pi026 pi058) pi094) (or pi116 pi058))
+(and (not (and n852 (and (and n848 n825) pi026))) (not n840)) --> (not (or (and (and (and n825 pi026) n852) n848) n840))
+(not (and (not (and (and (not opcode4) (not opcode3)) opcode1)) opcode2)) --> (xor (or (not (and opcode2 opcode1)) (or opcode3 opcode4)) opcode2)
+(not (or (and (xor ocoeffs1 ctable1) ingones1) (not (or ocoeffs1 ctable1)))) --> (xor (or (xor ctable1 ingones1) (xor ocoeffs1 ingones1)) ingones1)
+(xor (xor (xor n690 n689) (and (and n627 n322) i_24)) n686) --> (xor (xor (xor (and (and i_24 n322) n627) n686) n689) n690)
+(and (and (not (or n217 n168)) (and (not n120) n226)) i_32) --> (and (and (and i_32 n226) (not n168)) (not (or n217 n120)))
+(not (and (and (not (and (and n135 n133) n129)) norm6) n47)) --> (or (not (and norm6 n47)) (and (and n135 n129) n133))
+(and (not (and (and n135 (not n132)) (not n128))) (not n47)) --> (xor (or (or (not n135) n47) (or n132 n128)) n47)
+(and (xor (xor n286 (and n269 n213)) (and n248 n213)) n281) --> (xor (and (xor n269 n248) (and n281 n213)) (and n281 n286))
+(and n251 (not (xor (and (not norm5) n143) (and norm5 i_25)))) --> (xor (and (and (xor i_25 n143) n251) norm5) (and (not n143) n251))
+(and (xor (xor n359 (xor n272 (and n253 n215))) n186) n157) --> (xor (and (xor (xor n186 n272) n359) n157) (and (and n157 n215) n253))
+(and (not (and (and norm4 i_6) i_7)) (not (and i_6 i_5))) --> (xor (or (or (not i_6) i_5) (and norm4 i_7)) i_6)
+(and (xor (and (and i_6 i_8) i_7) i_4) (and i_7 i_6)) --> (and (and (xor i_8 i_4) i_6) i_7)
+(and (and n121 (not (and (not n115) n34))) (and norm6 i_3)) --> (and (and (and i_3 n121) norm6) (or (not n34) n115))
+(and (not (xor n245 (not (and (and n240 n230) n226)))) n236) --> (xor (and (and (and n230 n236) n240) n226) (and n236 n245))
+(and n141 (and (and n103 (and n95 n80)) (and n114 n99))) --> (and (and (and (and n99 n141) n114) (and n103 n95)) n80)
+(and (and (and n158 (and (not n148) (not n136))) n98) n65) --> (and (and (not (or n136 n148)) (and n65 n98)) n158)
+(and (not (and (not i18) i17)) (not (and (not i17) i16))) --> (xor (not (or (xor i16 i18) i17)) i18)
+(and n199 (and (and n192 n165) (and n152 (and n116 n103)))) --> (and (and (and (and n199 n192) n103) (and n116 n152)) n165)
+(and n180 (and (and n173 n142) (and n114 (and n86 n74)))) --> (and (and (and (and n180 n86) n74) (and n114 n173)) n142)
+(and (not (and (not (and (not desty10) (not desty9))) desty11)) (not desty12)) --> (xor (or (not (or desty9 desty10)) (or (not desty11) desty12)) desty12)
+(and (not (and n150 (not (and (not (and n140 n130)) n36)))) n21) --> (and (or (xor (and (and n36 n130) n140) n36) (not n150)) n21)
+(and (not (and (and (not pi100) (not pi095)) (not pi097))) (not pi110)) --> (xor (or (or pi110 pi095) (or pi100 pi097)) pi110)
+(and (and (not (and (not pi116) pi029)) pi058) (not (and pi116 pi097))) --> (and (xor (not (and (xor pi097 pi029) pi116)) pi029) pi058)
+(and (not (and (not (and (and n254 ocoeffs0) norm6)) (not n245))) n44) --> (or (and (and (and n44 ocoeffs0) n254) norm6) (and n44 n245))
+(not (and (not (and (not n995) (not (and (not n991) ingones0)))) n24)) --> (and (or (not (and n24 ingones0)) n991) (not (and n24 n995)))
+(not (and (not (and shift0 (not a109))) (not (and (not shift0) norm8)))) --> (xor (or (xor norm8 a109) shift0) a109)
+(and (not (and (not shift0) (not a108))) (not (and shift0 (not a107)))) --> (xor (and (xor a107 a108) shift0) a108)
+(and (and (not (and norm4 n333)) n150) (not (and (not norm4) n336))) --> (and (xor (or (xor (not n336) n333) norm4) n333) n150)
+(and (and (and n251 (xor n247 (not n237))) n218) (and n214 n207)) --> (and (and (and (and n251 n218) n207) (xor (not n247) n237)) n214)
+(and (and n251 (xor n247 (not (and (and n235 n232) n222)))) n218) --> (and (and (xor (not (and (and n235 n222) n232)) n247) n218) n251)
+(and n80 (and (not (xor (xor (xor n48 n45) i_2) i_10)) n53)) --> (and (xor (xor (xor (not i_2) i_10) n45) n48) (and n53 n80))
+(and (not (xor (xor n199 (and n188 n152)) (and n175 n152))) n138) --> (xor (and (xor n188 n175) (and n138 n152)) (and (not n199) n138))
+(and (and (not (and (not i_9) i_3)) i_7) (not (and i_9 norm7))) --> (and (xor norm7 i_9) i_7)
+(and (not (and (not (and i_9 i_7)) i_8)) (not (and i_7 i_4))) --> (xor (not (and (and (xor i_4 i_8) i_7) (or i_4 i_9))) i_8)
+(and norm1 (not (and (not norm6) (not (and n158 (and n149 n137)))))) --> (and (or norm6 n158) norm1)
+(and (not (and (not n60) (not (and (not (and norm8 n48)) B3)))) n46) --> (and (or (xor (and (and B3 n48) norm8) B3) n60) n46)
+(and (not (and (and B3 (not B2)) (not B6))) (not (and B5 norm8))) --> (xor (or (xor (or B2 B6) B5) norm8) B5)
+(and (not (and norm3 (and B4 B3))) (not (and (not B6) (not B4)))) --> (xor (and norm3 (and B4 B3)) (or B4 B6))
+(and (not (and (and pi116 pi026) (not pi058))) (not (and pi058 (not pi026)))) --> (xor (not (and (or pi058 pi116) pi026)) pi058)
+(not (and (not (and (not n346) (not (and (not n342) (not n334))))) n305)) --> (xor (or (not (or n342 n334)) (or (not n305) n346)) n305)
+(not (and (not n808) (not (and (not (and (not n801) (not norm9))) ocoeffs0)))) --> (and (or norm9 (or n801 n808)) (or ocoeffs0 n808))
+(and (and (not (and ingones1 ocoeffs2)) ocoeffs0) (not (and (not ingones1) (not ocoeffs2)))) --> (and (xor ocoeffs2 ingones1) ocoeffs0)
+(not (and (not (and (not shift0) (not a16))) (not (and shift0 (not a15))))) --> (xor (not (and (xor a15 a16) shift0)) a16)
+(and norm1 (xor (and (not n369) (and n365 n325)) (not (and n365 n325)))) --> norm1
+(and (not (xor (and n203 (not (xor n200 n197))) (xor n200 n197))) n188) --> (and (xor (not n200) n197) (and (not n203) n188))
+(and n388 (and n359 (xor (xor n271 (and n262 n215)) (and n253 n215)))) --> (and (xor (and (xor n253 n262) n215) n271) (and n359 n388))
+(and (and (and n52 (not n47)) (not (and (and n30 n26) n23))) n22) --> (and (not (or (and (and n23 n26) n30) n47)) (and n22 n52))
+(not (xor (not (and (and (and (xor n127 n133) n116) n104) n96)) n133)) --> (xor (and (and (xor n133 n127) n104) (and n116 n96)) n133)
+(and (not n164) (and (and n151 n131) (and (not n115) (and n102 n85)))) --> (and (and (and (and n102 n131) n85) n151) (not (or n115 n164)))
+(and (not (and (not n741) (not (and (and (and n461 n457) n734) pi002)))) pi082) --> (and (or (and (and (and pi002 n461) n457) n734) n741) pi082)
+(and (not (and n883 (not (and n880 (not n863))))) (not (and (not n855) n820))) --> (and (xor (or (not (and n883 n880)) n863) n883) (or (not n820) n855))
+(not (and (not (and n1041 (not (and (not (and n980 (not n950))) n25)))) n29)) --> (or (and (xor (or (not (and n25 n980)) n950) n25) n1041) (not n29))
+(and (not (and (not (and ingones1 (not ocoeffs1))) ctable1)) (not (and (not ingones1) ocoeffs1))) --> (or (and (xor ocoeffs1 ctable1) ingones1) (not (or ocoeffs1 ctable1)))
+(not (and (not (and (and (not n3919) (not n3917)) (and (not n3914) n3913))) n669)) --> (xor (or (or (not (and n669 n3913)) n3917) (or n3919 n3914)) n669)
+(not (and (not (and (and n5538 (not n5535)) (and (not n5532) (not n5530)))) shift6)) --> (xor (or (or (not (and shift6 n5538)) n5535) (or n5532 n5530)) shift6)
+(xor (and n199 (not (xor (and n195 norm5) norm5))) (xor (and n195 norm5) norm5)) --> (xor (and norm5 (not (or n195 n199))) n199)
+(and (and (not (and i_8 (not i_7))) (not i_9)) (not (and (not i_8) i_7))) --> (not (or (xor i_7 i_8) i_9))
+(not (and (not (and norm4 (not B6))) (not (and (and (not B9) B6) (not B4))))) --> (xor (or norm4 B6) (and (or B4 B9) B6))
+(not (and (not n355) (not (and (not (and (not (and n343 (not n340))) B4)) n335)))) --> (or (and (xor (or (not (and B4 n343)) n340) B4) n335) n355)
+(and (not (and (and (not opext0) opcode4) opext1)) (and (not (and (not opext1) opcode4)) opcode3)) --> (xor (and (not (and opext1 opext0)) (and opcode3 opcode4)) opcode3)
+(and (not (and (and ctable0 (not ocoeffs0)) (not ingones1))) (not (and (xor ocoeffs2 ingones1) ocoeffs0))) --> (or (xor (and (not ocoeffs2) ocoeffs0) ingones1) (not (or ocoeffs0 ctable0)))
+(not (and (not (and (not (and n595 (not n581))) (not (and (not n515) n22)))) n29)) --> (and (or (not (and n29 n595)) n581) (or (not (and n29 n22)) n515))
+(and (and (not (and (not ingones1) (not ingones0))) ctable0) (not (and (and ingones0 ocoeffs0) ingones1))) --> (xor (and (or (not ingones0) ocoeffs0) (and ingones1 ctable0)) (and ingones0 ctable0))
+(and (not (and (and shift0 a14) (not shift1))) (not (and (and (not shift0) a13) shift1))) --> (or (xor (not (and shift1 a13)) (and shift0 a14)) (and shift1 shift0))
+(and (not (and (and (not shift0) a40) (not shift1))) (not (and (and shift0 a37) shift1))) --> (or (xor (not (and (xor a37 a40) shift0)) a40) (xor shift1 shift0))
+(xor (and (xor n359 (xor n271 (and n262 n215))) n186) (and (and n186 n215) n253)) --> (xor (and (and (xor n253 n262) n186) n215) (and (xor n359 n271) n186))
+(and (and (not (and (not i_6) i_4)) i_5) (not (and (and norm8 i_6) (not i_4)))) --> (xor (and (and (xor i_4 i_6) i_5) (or norm8 i_4)) i_5)
+(and (not (and (not (and i_9 i_5)) (and i_8 i_7))) (not (and (not i_7) i_5))) --> (xor (or (not (and i_7 i_8)) (and i_5 i_9)) (and (not i_7) i_5))
+(and (not (not (or (xor i_7 i_8) i_9))) (not (and (not (and i_8 i_7)) i_5))) --> (and (xor (or (xor i_8 i_7) (xor i_5 i_9)) i_5) (or (not i_5) i_7))
+(and (not (xor norm3 (not (and i33 i1)))) (and (not (xor i33 (not i1))) norm13)) --> (and (and (xor i33 i1) norm3) norm13)
+(and (not (and (and ingones0 ctable1) ingones1)) (not (and (and (not ingones1) (not ctable0)) (not ingones0)))) --> (or (xor (or (xor ctable0 ctable1) ingones1) ctable1) (xor ingones0 ingones1))
+(and (not (and (not (and shift0 a120)) shift1)) (not (and (not (and (not shift0) a123)) norm10))) --> (and (xor (and (xor a123 a120) shift0) a123) (xor norm10 shift0))
+(and norm1 (xor (and (xor (and n384 n369) n387) (and n384 n369)) (not (and n384 n369)))) --> norm1
+(and (not (and n149 (not (and (not norm6) n126)))) (not (and n142 (and (not norm6) n126)))) --> (xor (or (not (and (xor n149 n142) n126)) norm6) n149)
+(xor n212 (xor (and (not (xor (and n203 n202) n201)) n188) (xor (and n203 n202) n201))) --> (xor (xor (and (and (not n188) n203) n202) (or n188 n201)) n212)
+(xor (and (not (xor (xor (and i_16 i_8) i_7) i_15)) (and norm7 norm15)) (and norm7 norm15)) --> (and (and norm7 (xor i_15 i_7)) norm15)
+(and (and (not (and (not i7) i6)) (not (and norm7 i4))) (not (and (not i6) i5))) --> (and (xor (or (xor i6 i4) norm7) i4) (or (not i6) i7))
+(and (and (not (and pi021 pi008)) (not pi013)) (not (and (not (and (not pi021) (not pi008))) pi007))) --> (not (or (xor (and (xor pi007 pi008) (xor pi021 pi008)) pi008) pi013))
+(and (and (not (and (not (and (not pi110) (not pi096))) pi097)) (and (not pi100) (not pi095))) pi097) --> (and (not (or (or pi110 pi096) (or pi100 pi095))) pi097)
+(and (and norm2 (not (xor (and (not n215) (not n167)) (not (and (not n216) (not n119)))))) n225) --> (and (xor (or n167 n215) (or n216 n119)) (and norm2 n225))
+(not (and (and n135 (not (and (and n63 n130) norm6))) (not (and n127 (not (and norm6 n63)))))) --> (or (xor (and (and (xor n130 n127) n63) norm6) n127) (not n135))
+(and (not (xor (or (not norm5) (or (not i_7) i_4)) i_4)) (not (and (and i_7 i_4) norm5))) --> (xor (and norm5 i_7) i_4)
+(and (not (and (not i23) i22)) (and (not (and (not i22) i21)) (not (and (not i21) i20)))) --> (and (xor (not (or (xor i20 i22) i21)) i22) (or (not i22) i23))
+(and (and n450 (not (xor norm4 (not norm10)))) (xor (and (not (xor norm4 (not norm10))) norm10) (not norm10))) --> (and (xor norm10 norm4) n450)
+(and (and n135 (not (and (and n63 n130) (not n77)))) (not (and n127 (not (and (not n77) n63))))) --> (and (xor (or (not (and (xor n130 n127) n63)) n77) n127) n135)
+(and (not (and (not (and i_7 i_6)) i_9)) (not (and (and (not i_9) i_7) (not (and i_6 i_5))))) --> (xor (not (and (or i_5 i_9) (and i_6 i_7))) (or i_9 i_7))
+(and (xor (and (or (not i_7) i_6) (and (not i_9) i_8)) i_8) (not (and (and i_9 i_7) norm10))) --> (and (xor (and norm10 i_7) i_9) i_8)
+(and (not (and n133 (not (and n116 (and n104 n96))))) (not (and (and n127 n96) (and n104 n116)))) --> (xor (not (and (and (and (xor n127 n133) n116) n104) n96)) n133)
+(and (not (and (and (not ctable1) ctable0) (and ingones1 ingones0))) (not (and (and (not ingones1) (not ctable0)) (not ingones0)))) --> (or (or (xor ingones0 ctable0) (xor ingones1 ctable0)) (and ctable0 ctable1))
+(and (and (xor (xor n313 n273) norm4) (xor (and (xor n313 n273) norm4) (and (not n313) (not n273)))) n322) --> (and (and norm4 n322) (not (or n313 n273)))
+(and (and (and n387 (xor norm4 (not norm10))) (xor (and (not (xor norm4 (not norm10))) norm10) (not norm10))) i_26) --> (and (not (or norm4 norm10)) (and i_26 n387))
+(and (and (xor n216 (not n119)) (not (xor (and (not n215) (not n167)) (not (and norm11 (not n119)))))) n225) --> (and (and (xor norm11 n119) n225) (xor (or n167 n215) n119))
+(and (not (and (not (and i_8 i_7)) i_5)) (xor (or (or (not i_6) i_5) (and (not i_8) i_7)) i_6)) --> (xor (not (or (and (xor i_6 i_8) i_7) (xor i_5 i_8))) i_8)
+(and (not (xor (or (not (and opcode3 opcode4)) (or opcode1 opcode0)) opcode1)) (not (and (not (and opcode4 (not opcode3))) opcode1))) --> (and (and (xor opcode1 opcode3) opcode4) (or (not opcode0) opcode1))
+(and (and (xor (not n217) (xor n168 n120)) (xor (and (not n217) (xor n168 n120)) (and (not n168) norm11))) n226) --> (and (not (or n217 n168)) (and norm11 n226))
+(and (and (xor (xor n313 n273) norm4) (not (xor (and (xor n313 n273) norm4) (and (not n313) (not n273))))) n322) --> (and (and (xor (xor norm4 n313) n273) n322) (or n313 n273))
+(and (and (and n373 (not (xor norm5 (not norm12)))) (xor (and (not (xor norm5 (not norm12))) norm12) (not norm12))) i_24) --> (and (and (xor norm5 norm12) i_24) n373)
+(and (not (and (and (and (not pi052) (not pi039)) (not pi051)) (not pi027))) (not (xor (or (or pi026 pi051) (or pi052 pi039)) pi026))) --> (xor (and (or (or pi051 pi052) pi039) (xor pi026 pi027)) pi027)
+(and (and (not (and (not (and i_7 i_6)) (not i_3))) i_4) (not (and (and (xor (not i_2) i_6) i_3) (or (not i_6) i_7)))) --> (and (or (and (xor i_7 i_3) i_6) (and (xor i_6 i_2) i_3)) i_4)
+(xor (and n305 (xor (and (xor n264 n257) (not n254)) (not n254))) (and n305 (not (xor (and (xor n264 n257) (not n254)) (not n254))))) --> n305
+(and (xor (and (xor (xor n312 n288) (xor n167 n143)) norm6) (and (xor n312 n288) (xor n167 n143))) (and (xor (xor n312 n288) (xor n167 n143)) norm6)) --> (and (xor (xor (xor n288 n143) n312) n167) norm6)
+(xor (and (xor (and (xor n313 n273) (xor n216 n192)) (and (not n313) (not n273))) (and (xor n313 n273) (xor n216 n192))) (not (and (xor n313 n273) (xor n216 n192)))) --> true
+(and (not (xor (not (and (and (xor i_4 i_8) i_7) (or i_4 i_9))) i_8)) (not (and (and (not (and i_9 i_7)) i_8) (not (and (not (and (not i_9) (not i_7))) (not i_4)))))) --> (and (xor (and (xor i_9 i_7) i_8) i_4) (or (not i_4) i_7))
+(and (and (xor norm3 (xor norm8 norm13)) (xor (and norm3 (xor norm8 norm13)) norm21)) (xor (and (xor (and norm3 (xor norm8 norm13)) norm21) (and norm3 (xor norm8 norm13))) (not (and norm3 (xor norm8 norm13))))) --> (and norm21 norm3)
+(and (and (xor n364 (not n324)) (xor norm5 (not (and (not n364) (not n324))))) (xor (and (not (xor norm5 (not (and (not n364) (not n324))))) (and (not n364) (not n324))) (not (and (not n364) (not n324))))) --> (and (not norm5) (and n324 n364))
+(and (and (xor (xor norm4 norm9) norm14) (xor (and (xor norm4 norm9) norm14) (and norm4 norm9))) (xor (and (xor (and (xor norm4 norm9) norm14) (and norm4 norm9)) (and (xor norm4 norm9) norm14)) (not (and (xor norm4 norm9) norm14)))) --> (and (and norm14 norm4) norm9)
+
+
+graph_opt called
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 73
+selected cripath : 
+n137 n139 n140 n141 n161 n164 n165 m_31 
+
+unsat
+pattern matched!
+tgt, new_tgt same? : true
+----print_subst start----
+tmpvar#0  -->  CVar_n125
+tmpvar#1  -->  CVar_n108
+tmpvar#2  -->  CVar_n109
+tmpvar#3  -->  CVar_n161
+---------------------
+
+old bexp : (and n117 (xor n118 (and i_13 n107)))
+new bexp : (xor (and (and n117 i_13) n107) (and n117 n118))
+tgt bexp     : (and n125 (xor n108 (and n109 n161)))
+sub old bexp : (and n125 (xor n108 (and n109 n161)))
+sub new bexp : (xor (and (and n125 n109) n161) (and n125 n108))
+before depth : 6
+after depth : 5
+graph replaced
+
+
+graph size : 74
+graph mult size : 36
+graph xor size : 38
+optimal graph replaced, cost : 4500
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 74
+selected cripath : 
+n120 n122 n123 n124 n125 tmp1320 tmp1319 m_31 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 74
+selected cripath : 
+m_30 n126 n125 n124 n116 n112 n111 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 74
+selected cripath : 
+m_29 n159 n158 n157 n156 n155 n153 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 74
+selected cripath : 
+m_30 n162 n161 n158 n157 n149 n145 n144 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 74
+selected cripath : 
+n120 n122 n123 n124 n125 n126 m_29 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 74
+selected cripath : 
+m_31 tmp1319 tmp1320 n109 n108 n100 n99 n98 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 74
+selected cripath : 
+n153 n155 n156 n157 n158 n161 tmp1319 m_31 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 74
+selected cripath : 
+n137 n139 n140 n141 n161 n162 m_30 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 74
+selected cripath : 
+n143 n145 n149 n157 n158 n161 n162 m_30 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 74
+selected cripath : 
+m_31 tmp1319 n161 n158 n157 n149 n148 n147 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 74
+selected cripath : 
+n131 n132 n133 n141 n161 n162 m_30 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 74
+selected cripath : 
+m_30 n126 n109 n108 n100 n96 n95 
+
+graph opt iter finished
+============================================= graph opt iter once ===================================================
+now graph size : 74
+selected cripath : 
+m_29 n159 n142 n141 n140 n136 n134 
+
+dangling node deleted : nodeVal : AND index : 179
+dangling node deleted : nodeVal : n165 index : 1
+dangling node deleted : nodeVal : XOR index : 177
+dangling node deleted : nodeVal : n164 index : 1
+dangling node deleted : nodeVal : AND index : 175
+cleanup fin
+redundant node deleted : nodeVal : n126 index : 1 is same with nodeVal : tmp1320 index : 1
+sharing detect fin
+dangling node deleted : nodeVal : AND index : 83
+cleanup fin
+graph opt finished
+INORDER = i_9 i_8 i_7 i_6 i_5 i_4 i_33 i_32 i_31 i_30 i_3 i_29 i_28 i_27 i_26 i_25 i_24 i_23 i_22 i_21 i_20 i_2 i_19 i_18 i_17 i_16 i_15 i_14 i_13 i_12 i_11 i_10;
+OUTORDER = m_9 m_8 m_7 m_6 m_5 m_4 m_31 m_30 m_3 m_29 m_28 m_27 m_26 m_25 m_24 m_23 m_22 m_21 m_20 m_2 m_19 m_18 m_17 m_16 m_15 m_14 m_13 m_12 m_11 m_10 m_1 m_0;
+m_0 = false;
+m_1 = false;
+m_10 = false;
+m_11 = false;
+m_12 = false;
+m_13 = false;
+m_14 = false;
+m_15 = false;
+m_16 = false;
+m_17 = false;
+m_18 = false;
+m_19 = false;
+m_2 = false;
+m_20 = false;
+m_21 = false;
+m_22 = false;
+m_23 = false;
+m_24 = false;
+m_25 = false;
+m_26 = false;
+m_27 = false;
+m_28 = false;
+m_3 = false;
+m_4 = false;
+m_5 = false;
+m_6 = false;
+m_7 = false;
+m_8 = false;
+m_9 = false;
+n101 = (!i_10);
+n102 = (!i_11);
+n104 = (!i_12);
+n105 = (!i_13);
+n110 = (!i_6);
+n111 = (!i_7);
+n113 = (!i_8);
+n114 = (!i_9);
+n117 = (!i_2);
+n118 = (!i_3);
+n120 = (!i_4);
+n121 = (!i_5);
+n127 = (!i_30);
+n128 = (!i_31);
+n130 = (!i_32);
+n131 = (!i_33);
+n134 = (!i_26);
+n135 = (!i_27);
+n137 = (!i_28);
+n138 = (!i_29);
+n143 = (!i_22);
+n144 = (!i_23);
+n146 = (!i_24);
+n147 = (!i_25);
+n150 = (!i_18);
+n151 = (!i_19);
+n153 = (!i_20);
+n154 = (!i_21);
+n94 = (!i_14);
+n95 = (!i_15);
+n97 = (!i_16);
+n98 = (!i_17);
+n103 = (n101 * n102);
+n106 = (n104 * n105);
+n112 = (n110 * n111);
+n115 = (n113 * n114);
+n119 = (n117 * n118);
+n122 = (n120 * n121);
+n129 = (n127 * n128);
+n132 = (n130 * n131);
+n136 = (n134 * n135);
+n139 = (n137 * n138);
+n145 = (n143 * n144);
+n148 = (n146 * n147);
+n152 = (n150 * n151);
+n155 = (n153 * n154);
+n96 = (n94 * n95);
+n99 = (n97 * n98);
+n100 = (n96 * n99);
+n107 = (n103 * n106);
+n116 = (n112 * n115);
+n123 = (n119 * n122);
+n133 = (n129 * n132);
+n140 = (n136 * n139);
+n149 = (n145 * n148);
+n156 = (n152 * n155);
+n108 = (n100 * n107);
+n124 = (n116 * n123);
+n141 = (n133 * n140);
+n157 = (n149 * n156);
+n109 = (!n108);
+n125 = (!n124);
+n142 = (!n141);
+n158 = (!n157);
+n161 = (n141 * n158);
+n162 = (!n157 * n161) + (n157 * !n161);
+tmp1321 = (n108 * n125);
+n159 = (n142 * n158);
+tmp1320 = (n109 * n125);
+m_29 = (n159 * tmp1320);
+m_30 = (n162 * tmp1320);
+tmp1319 = (n161 * tmp1320);
+m_31 = (!tmp1319 * tmp1321) + (tmp1319 * !tmp1321);
+
+
+new graph depth
+---graph depth print---
+var : m_0 depth : 0
+var : m_1 depth : 0
+var : m_2 depth : 0
+var : m_3 depth : 0
+var : m_4 depth : 0
+var : m_5 depth : 0
+var : m_6 depth : 0
+var : m_7 depth : 0
+var : m_8 depth : 0
+var : m_9 depth : 0
+var : m_10 depth : 0
+var : m_11 depth : 0
+var : m_12 depth : 0
+var : m_13 depth : 0
+var : m_14 depth : 0
+var : m_15 depth : 0
+var : m_16 depth : 0
+var : m_17 depth : 0
+var : m_18 depth : 0
+var : m_19 depth : 0
+var : m_20 depth : 0
+var : m_21 depth : 0
+var : m_22 depth : 0
+var : m_23 depth : 0
+var : m_24 depth : 0
+var : m_25 depth : 0
+var : m_26 depth : 0
+var : m_27 depth : 0
+var : m_28 depth : 0
+var : m_29 depth : 5
+var : m_30 depth : 5
+var : m_31 depth : 5
+---------------------
+old mult depth : 6
+new mult depth : 5

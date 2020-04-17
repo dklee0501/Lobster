@@ -1,0 +1,8 @@
+(declare-const opcode4 Bool)
+(declare-const n58 Bool)
+(declare-const opext0 Bool)
+(define-fun is_equal () Bool
+	(= (and (and n58 opcode4) opext0) (and n58 (and opext0 opcode4)))
+)
+(assert (not is_equal))
+(check-sat)

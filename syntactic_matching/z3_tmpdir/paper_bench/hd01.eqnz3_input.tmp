@@ -1,0 +1,9 @@
+(declare-const n152 Bool)
+(declare-const n121 Bool)
+(declare-const n90 Bool)
+(declare-const n176 Bool)
+(define-fun is_equal () Bool
+	(= (and (and (and n121 n90) n152) n176) (and (and n176 n90) (and n121 n152)))
+)
+(assert (not is_equal))
+(check-sat)

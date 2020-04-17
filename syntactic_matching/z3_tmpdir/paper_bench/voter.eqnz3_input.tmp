@@ -1,0 +1,10 @@
+(declare-const n5193 Bool)
+(declare-const n5258 Bool)
+(declare-const n5242 Bool)
+(declare-const n5224 Bool)
+(declare-const n5245 Bool)
+(define-fun is_equal () Bool
+	(= (and n5193 (not (and n5258 (not (and n5242 (not (and n5224 n5245))))))) (and (xor (or (not (and n5242 n5258)) (and n5245 n5224)) n5258) n5193))
+)
+(assert (not is_equal))
+(check-sat)

@@ -1,0 +1,8 @@
+(declare-const tmp1309 Bool)
+(declare-const n103 Bool)
+(declare-const n96 Bool)
+(define-fun is_equal () Bool
+	(= (not (and tmp1309 (and n103 n96))) (not (and (and n103 tmp1309) n96)))
+)
+(assert (not is_equal))
+(check-sat)

@@ -1,0 +1,9 @@
+(declare-const new_n441_ Bool)
+(declare-const b5 Bool)
+(declare-const a5 Bool)
+(declare-const new_n455_ Bool)
+(define-fun is_equal () Bool
+	(= (and (not (and (not a5) new_n441_)) (and (not (and a5 b5)) new_n455_)) (and (xor (or (xor (not new_n441_) b5) a5) b5) new_n455_))
+)
+(assert (not is_equal))
+(check-sat)
