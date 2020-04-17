@@ -312,10 +312,7 @@ let graph_opt_by_case : string -> G.t -> vdmap -> G.vertex -> (bexp * bexp) -> (
           (graph, vdmap, false)
         else 
           (*let new_vdmap = update_vdmap graph_with_new_tgt vdmap [tgt_node] in*)
-          let _ = Z3.z3_print input_filename sub_old sub_new in
-          let is_same = Z3.execute_z3 input_filename in
           let _ = print_endline("pattern matched!") in
-          let _ = print_endline("tgt, new_tgt same? : " ^ (string_of_bool is_same)) in 
           let _ = print_subst subst in
           let _ = print_string("\nold bexp : "); Pp.print_bexp old_bexp in
           let _ = print_string("\nnew bexp : "); Pp.print_bexp new_bexp in
@@ -325,11 +322,8 @@ let graph_opt_by_case : string -> G.t -> vdmap -> G.vertex -> (bexp * bexp) -> (
           let _ = print_endline ("\nbefore depth : " ^ (string_of_int before_depth)) in
           let _ = print_endline ("after depth : " ^ (string_of_int after_depth)) in
           (*let _ = print_graph graph_with_new_tgt (get_graph_varlist graph_with_new_tgt) in*)
-          if(not is_same) then
-            (graph, vdmap, false)
-          else 
-            let _ = print_endline ("graph replaced\n\n") in 
-            (graph_with_new_tgt, new_vdmap, true)
+          let _ = print_endline ("graph replaced\n\n") in 
+          (graph_with_new_tgt, new_vdmap, true)
 
 
 (*
