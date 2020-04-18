@@ -2,8 +2,8 @@
 echo " "
 echo "Evaluation result will be saved in paper_result directory"
 echo " "
-echo " Name                        Eval.Time"
-echo "              Original     Baseline-opted   Lobster-opted"
+echo " Name                             Eval.Time"
+echo "                   Original     Baseline-opted   Lobster-opted"
 
 ./he_base paper_bench/cardio.eqn 10 > paper_result/cardio
 ./he_base paper_bench/cardio.eqn_opted_result_baseline 9 > paper_result/cardio_opted_result_baseline

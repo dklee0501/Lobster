@@ -388,7 +388,7 @@ int main( const int argc, const char **argv )
 	    }
 	}
 	else{
-	    cerr <<  circuit_filename << std::string(10 - name_length, ' ')  << std::string(12 - time_length, ' ') << time_string ;
+	    cerr <<  circuit_filename << std::string(15 - name_length, ' ')  << std::string(12 - time_length, ' ') << time_string ;
 	}
         /*}*/
         //driver.print( std::cout ) << "\n";
