@@ -13,19 +13,19 @@ echo "                   Original     Baseline-opted   Lobster-opted"
 ./he_base paper_bench/dsort.eqn_opted_result_baseline 8 > paper_result/dsort_opted_result_baseline
 ./he_base paper_bench/dsort.eqn_opted_result 8 > paper_result/dsort_opted_result
 
-echo "hd01.eqn             -                  -               -"
+echo "hd01.eqn                  -                  -               -"
 
-echo "hd02.eqn             -                  -               -"
+echo "hd02.eqn                  -                  -               -"
 
-echo "hd03.eqn             -                  -               -"
+echo "hd03.eqn                  -                  -               -"
 
 ./he_base paper_bench/hd04.eqn 10 > paper_result/hd04
 ./he_base paper_bench/hd04.eqn_opted_result_baseline 9 > paper_result/hd04_opted_result_baseline
 ./he_base paper_bench/hd04.eqn_opted_result 8 > paper_result/hd04_opted_result
 
-echo "hd05.eqn             -                  -               -"
+echo "hd05.eqn                  -                  -               -"
 
-echo "hd06.eqn             -                  -               -"
+echo "hd06.eqn                  -                  -               -"
 
 ./he_base paper_bench/hd07.eqn 5 > paper_result/hd07
 echo -n "                  -"
@@ -63,7 +63,7 @@ echo -n "                  -"
 ./he_base paper_bench/ctrl.eqn_opted_result_baseline 6 > paper_result/ctrl_opted_result_baseline
 ./he_base paper_bench/ctrl.eqn_opted_result 5 > paper_result/ctrl_opted_result
 
-echo "dec.eqn              -                  -               -"
+echo "dec.eqn                   -                  -               -"
 
 ./he_base paper_bench/i2c.eqn 15 > paper_result/i2c
 ./he_base paper_bench/i2c.eqn_opted_result_baseline 9 > paper_result/i2c_opted_result_baseline
